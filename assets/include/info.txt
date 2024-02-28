@@ -1,0 +1,5 @@
+this zip contains, along with this text file, all of the images scaled to 8x their original size.
+
+to use them on iOS, first download all the icons. create a new shortcut with one step, to open the app of your choice. then, save it to the homescreen with a custom icon from the ones you saved.
+
+the color for the wallpaper is #030305

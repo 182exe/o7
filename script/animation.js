@@ -26,10 +26,10 @@ function loadingAnimation(
     let x = 0;
 
     return setInterval(function() {
-        process.stdout.clearLine();  // Clear the current line
-        process.stdout.cursorTo(0);  // Move cursor to beginning of line
-        process.stdout.write(chars[x++] + " " + text);
-        x = x % chars.length;
+        process.stdout.clearLine() // Clear the current line
+        process.stdout.cursorTo(0) // Move cursor to beginning of line
+        process.stdout.write(chars[x++] + " " + text)
+        x = x % chars.length
     }, delay);
 }
 
@@ -42,10 +42,10 @@ function loadingAnimation(
  * @param {string} doneSymbol Symbol to display when animation is done
  */
 function clearLoadingAnimation(interval, text, doneSymbol = "█") {
-    clearInterval(interval);
-    process.stdout.clearLine();  // Clear the current line
-    process.stdout.cursorTo(0);  // Move cursor to beginning of line
-    console.log(doneSymbol + " " + text);
+    clearInterval(interval)
+    process.stdout.clearLine() // Clear the current line
+    process.stdout.cursorTo(0) // Move cursor to beginning of line
+    console.log(doneSymbol + " " + text)
 }
 
-module.exports = { loadingAnimation, clearLoadingAnimation };
+module.exports = { loadingAnimation, clearLoadingAnimation }
